@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from google import genai
 
-client = genai.Client(api_key="AIzaSyBn4WAf3MQy9kjE1ppLoVKASe__-RIibvg")
+client = genai.Client(api_key="")
 
 app = FastAPI()
 
