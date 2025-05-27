@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask the God</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Ask the God</h1>
+        <div class="form-container">
+            <form method="post">
+                <input type="text" name="question" placeholder="Seek your truth..." value="{{ question }}" required>
+            </form>
+            <div class="answer-box">
+                {% if answer %}
+                <div class="answer">{{ answer }}</div>
+                {% else %}
+                <div class="answer">&nbsp;</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
